@@ -1,0 +1,99 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #faf7f7;
+    color: #2c2525;
+    margin: 0;
+    padding: 0;
+}
+
+center > div {
+    background: #ffffff;
+    padding: 40px !important;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f1eae2;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+img {
+    width: 60%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    margin: 20px 0;
+    border: 1px solid #f5ecec;
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #3b3232;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 15px;
+    color: #706262;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 22px;
+    color: #3b3232;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.colors {
+    font-size: 13px;
+    color: #c97d7d;
+    font-weight: 500;
+    margin: 15px 0;
+    letter-spacing: 0.5px;
+}
+
+
+button[onclick^="addToCart"] {
+    background-color: #4a3f3f;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    letter-spacing: 0.5px;
+}
+
+button[onclick^="addToCart"]:hover {
+    background-color: #c97d7d;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(201, 125, 125, 0.2);
+}
+
+
+button:not([onclick^="addToCart"]) {
+    background-color: #c97d7d;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+    letter-spacing: 0.5px;
+    box-shadow: 0 5px 15px rgba(201, 125, 125, 0.1);
+}
+
+button:not([onclick^="addToCart"]):hover {
+    background-color: #b36868;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(201, 125, 125,

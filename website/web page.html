@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowyy Beauty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Glo<span class="w">Wyy Beauty</span></div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <input type="text" id="searchBox" placeholder="Search products...">
+                <div id="results"></div>
+            </div>
+            <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+        </div>
+    </nav>
+
+    <div class="product" data-name="blushes" data-url="product.html" data-img="images.jpg"></div>
+    <div class="product" data-name="lip tints" data-url="product.html" data-img="images (1).jpg"></div>
+    <div class="product" data-name="glazing milk" data-url="product.html" data-img="images (2).jpg"></div>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1><i>Enhance your natural glow with skincare designed for daily confidence and care....</i></h1>
+            <p>
+                Discover Glowyy Beauty — thoughtfully crafted beauty products made to bring out your natural radiance with effortless confidence.
+            </p>
+            <a href="#shop" class="shop-btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="shop" class="products">
+        <div class="section-title">
+            <h2>Our Collection</h2>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images.jpg" alt="Blushes">
+                </div>
+                <div class="card-info">
+                    <span class="category">Cheeks</span>
+                    <h3>Blushes</h3>
+                    <p class="shades">Soft Pink Nude, Toasted Teddy, Sleepy Girl</p>
+                    <div class="card-footer">
+                        
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images (1).jpg" alt="Lip Tints">
+                </div>
+                <div class="card-info">
+                    <span class="category">Lips</span>
+                    <h3>Lip Tints</h3>
+                    <p class="shades">Raspberry, Espresso, Jelly Bean, Marshmello</p>
+                    <div class="card-footer">
+                        
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-container">
+                    <img src="images (2).jpg" alt="Glazing Milk">
+                </div>
+                <div class="card-info">
+                    <span class="category">Skincare</span>
+                    <h3>Glazing Milk</h3>
+                    <p class="shades">CERAMIDE FACIAL ESSENCE</p>
+                    <div class="card-footer">
+                        
+                        <a href="product.html" class="view-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="info-wrapper">
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We create premium beauty products inspired by natural elegance.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <div class="contact-details">
+                <p>✉️ hello@glowyy.com</p>
+                <p>📸 @glowyyBeauty</p>
+                <p>📞 Hotline: 0254567890</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="util-buttons">
+        <button onclick="showMessage()" class="util-btn">Show Message</button>
+        <button onclick="changeColor()" class="util-btn">Change Color</button>
+    </div>
+
+    <div id="cartSidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Shopping Cart</h2>
+            <span id="closeBtn">&times;</span>
+        </div>
+        <div id="cartItems">
+            <p class="empty-cart-msg">No items added</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
